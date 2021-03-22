@@ -1,6 +1,6 @@
 # vscodeext
-
-comment for  monaco.editor
+```
+//comment for  monaco.editor
 // The diff editor offers a navigator to jump between changes. Once the diff is computed the <em>next()</em> and <em>previous()</em> method allow navigation. By default setting the selection in the editor manually resets the navigation state.
 var originalModel = monaco.editor.createModel("just some text\n\n\nHello World\n\nSome more text", "text/plain");
 var modifiedModel = monaco.editor.createModel("just some Text\n\nHello World\n\nSome more changes", "text/plain");
@@ -38,3 +38,4 @@ var navi = monaco.editor.createDiffNavigator(diffEditor, {
 window.setInterval(function() {
 	navi.next();
 }, 2000);
+```
